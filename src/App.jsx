@@ -18,9 +18,11 @@ export default function App() {
             <h2 className="text-center">Nuestra Colección</h2>
 
             <div className="row mt-5">
-                {data.map( () => (
+                {data.map( (guitar) => (
 
-                    <Guitar/>
+                    <Guitar
+                        guitar={guitar}
+                    />
                 ))}
             </div>
         </main>
