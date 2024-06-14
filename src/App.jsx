@@ -6,6 +6,7 @@ import { db } from "./data/db"
 export default function App() {
 
     const [data, setData] = useState(db);
+    const [cart, setCart] = useState([]);
 
     console.log(data);
 
@@ -21,7 +22,9 @@ export default function App() {
                 {data.map( (guitar) => (
 
                     <Guitar
+                        key={guitar.id}
                         guitar={guitar}
+                        setCart={setCart}
                     />
                 ))}
             </div>
