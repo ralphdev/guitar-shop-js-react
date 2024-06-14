@@ -19,7 +19,6 @@ export default function App() {
             updatedCart[itemExists].quantity++;
             setCart(updatedCart)
 
-            console.log('Ya Existe...')
         } else {
             item.quantity = 1
             setCart([...cart, item])
