@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react"
-import { db } from "../data/db"
+import { db } from "../data"
 
 export const useCart = () => {
 
